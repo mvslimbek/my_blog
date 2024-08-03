@@ -21,3 +21,12 @@ class BlogPost(models.Model):
     def __str__(self):
         return self.title
 
+
+class Talks(models.Model):
+    title = models.CharField(max_length=255)
+    photo = models.URLField()
+    datetime = models.DateField()
+    url = models.URLField()
+
+    def __str__(self):
+        return self.title

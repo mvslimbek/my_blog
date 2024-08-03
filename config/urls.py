@@ -24,5 +24,6 @@ urlpatterns = [
     path('about/', about),
     path('blog/', blog),
     path('blog/<str:slug>', maqola),
+    path('talks/', talksview)
 
 ]
